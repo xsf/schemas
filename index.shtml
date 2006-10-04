@@ -63,6 +63,11 @@
   <td><a href='/extensions/xep-0138.html'>XEP-0138</a></td>
 </tr>
 <tr class='tablebody'>
+  <td>http://jabber.org/features/compress</td>
+  <td><a href='compress-feature.xsd'>compress-feature.xsd</a></td>
+  <td><a href='/extensions/xep-0138.html'>XEP-0138</a></td>
+</tr>
+<tr class='tablebody'>
   <td>http://jabber.org/protocol/disco#info</td>
   <td><a href='disco-info.xsd'>disco-info.xsd</a></td>
   <td><a href='/extensions/xep-0030.html'>XEP-0030</a></td>
@@ -191,6 +196,16 @@
   <td>http://jabber.org/protocol/waitinglist</td>
   <td><a href='waitinglist.xsd'>waitinglist.xsd</a></td>
   <td><a href='/extensions/xep-0130.html'>XEP-0130</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>http://jabber.org/protocol/xhtml-im</td>
+  <td><a href='xhtml-im-driver.xsd'>xhtml-im-driver.xsd</a></td>
+  <td><a href='/extensions/xep-0071.html'>XEP-0071</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>http://jabber.org/protocol/xhtml-im</td>
+  <td><a href='xhtml-im-model.xsd'>xhtml-im-model.xsd</a></td>
+  <td><a href='/extensions/xep-0071.html'>XEP-0071</a></td>
 </tr>
 <tr class='tablebody'>
   <td>http://jabber.org/protocol/xhtml-im</td>
