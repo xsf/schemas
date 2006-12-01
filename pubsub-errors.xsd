@@ -9,9 +9,9 @@
   <xs:annotation>
     <xs:documentation>
       This namespace is used for error reporting only, as
-      defined in JEP-0060:
+      defined in XEP-0060:
 
-      http://www.jabber.org/jeps/jep-0060.html
+      http://www.xmpp.org/extensions/xep-0060.html
     </xs:documentation>
   </xs:annotation>
 

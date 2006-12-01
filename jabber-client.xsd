@@ -7,7 +7,7 @@
     elementFormDefault='qualified'>
 
   <xs:import namespace='urn:ietf:params:xml:ns:xmpp-stanzas'
-             schemaLocation='stanzaerror.xsd'/>
+             schemaLocation='http://www.xmpp.org/schemas/stanzaerror.xsd'/>
 
   <xs:element name='message'>
      <xs:complexType>

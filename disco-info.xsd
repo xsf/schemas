@@ -9,7 +9,7 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      JEP-0030: http://www.jabber.org/jeps/jep-0030.html
+      XEP-0030: http://www.xmpp.org/extensions/xep-0030.html
     </xs:documentation>
   </xs:annotation>
 

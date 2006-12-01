@@ -8,12 +8,12 @@
 
   <xs:import 
       namespace='jabber:x:data'
-      schemaLocation='http://jabber.org/protocol/x-data/x-data.xsd'/>
+      schemaLocation='http://www.xmpp.org/schemas/x-data.xsd'/>
 
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      JEP-0020: http://www.jabber.org/jeps/jep-0020.html
+      XEP-0020: http://www.xmpp.org/extensions/xep-0020.html
     </xs:documentation>
   </xs:annotation>
 

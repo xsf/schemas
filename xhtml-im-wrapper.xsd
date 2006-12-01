@@ -20,13 +20,13 @@
       XHTML 1.0 Integration Set.
 
       Full documentation of this Integration Set is contained in
-      "JEP-0071: XHTML-IM", a specification published by the
+      "XEP-0071: XHTML-IM", a specification published by the
       Jabber Software Foundation.
 
-         http://www.jabber.org/jeps/jep-0071.html
+         http://www.xmpp.org/extensions/xep-0071.html
 
     </xs:documentation>
-    <xs:documentation source="http://www.jabber.org/jeps/jep-0071.html"/>
+    <xs:documentation source="http://www.xmpp.org/extensions/xep-0071.html"/>
   </xs:annotation>
 
   <xs:element name='html'>

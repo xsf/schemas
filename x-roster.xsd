@@ -9,10 +9,10 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      JEP-0093: http://www.jabber.org/jeps/jep-0093.html
+      XEP-0093: http://www.xmpp.org/extensions/xep-0093.html
 
-      NOTE WELL: This protocol has been superseded by JEP-0144:
-      http://www.jabber.org/jeps/jep-0144.html
+      NOTE WELL: This protocol has been superseded by XEP-0144:
+      http://www.xmpp.org/extensions/xep-0144.html
     </xs:documentation>
   </xs:annotation>
 

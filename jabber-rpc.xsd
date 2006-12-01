@@ -9,7 +9,7 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      JEP-0009: http://www.jabber.org/jeps/jep-0009.html
+      XEP-0009: http://www.xmpp.org/extensions/xep-0009.html
 
       There is no official XML schema for XML-RPC. The main body 
       of this schema has been borrowed from an unofficial schema 

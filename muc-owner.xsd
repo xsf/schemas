@@ -9,13 +9,13 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      JEP-0045: http://www.jabber.org/jeps/jep-0045.html
+      XEP-0045: http://www.xmpp.org/extensions/xep-0045.html
     </xs:documentation>
   </xs:annotation>
 
   <xs:import 
       namespace='jabber:x:data'
-      schemaLocation='http://jabber.org/protocol/x-data/x-data.xsd'/>
+      schemaLocation='http://www.xmpp.org/schemas/x-data.xsd'/>
 
   <xs:element name='query'>
     <xs:complexType>

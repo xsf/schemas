@@ -11,7 +11,7 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      JEP-0138: http://www.jabber.org/jeps/jep-0138.html
+      XEP-0138: http://www.xmpp.org/extensions/xep-0138.html
     </xs:documentation>
   </xs:annotation>
 
