@@ -409,5 +409,5 @@
   <td><a href='/extensions/xep-0153.html'>XEP-0153</a></td>
 </tr>
 </table>
-<p>* Note: The schemas provided here are the latest versions from the <a href="http://www.jabberstudio.org/cgi-bin/viewcvs.cgi/cvs/xmpp/schemas/">CVS repository</a>, incorporating expected changes as reflected in <a href='/internet-drafts/draft-saintandre-rfc3920bis-00.html'>rfc3920bis</a> and <a href='/internet-drafts/draft-saintandre-rfc3921bis-00.html'>rfc3921bis</a>.</p>
+<p>* Note: The schemas provided here are the latest versions from the <a href="http://www.jabberstudio.org/cgi-bin/viewcvs.cgi/cvs/xmpp/schemas/">CVS repository</a>, incorporating expected changes as reflected in <a href='/internet-drafts/draft-saintandre-rfc3920bis-01.html'>rfc3920bis</a> and <a href='/internet-drafts/draft-saintandre-rfc3921bis-01.html'>rfc3921bis</a>.</p>
 <!--#include virtual="/includes/foot.txt" -->
