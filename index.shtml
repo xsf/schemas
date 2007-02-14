@@ -1,11 +1,12 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
 <html>
 <head>
 <title>XMPP Schemas</title>
-<!--#include virtual="/includes/head.txt" -->
+<!--#include virtual='/includes/head.txt' -->
 <h2>XMPP Schemas</h2>
-<p><em>Last Updated: 2006-10-04</em></p>
-<p>The wire protocols defined in the <a href="/rfcs/">XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are described formally in terms of <a href="http://www.w3.org/TR/xmlschema-1/">W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
-<p><em>Note: The following table is sortable, just click on the headers (click twice to reverse the sort order).</em></p>
+<p style='font-style: italic'>Last Updated: 2006-10-04</p>
+<p>The wire protocols defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are described formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
+<p style='font-style: italic'>Note: The following table is sortable, just click on the headers (click twice to reverse the sort order).</p>
 <table border='1' cellpadding='3' cellspacing='0' class='sortable' id='xeplist'>
 <tr class='tablebody'>
   <th>Namespace</th>
@@ -409,5 +410,5 @@
   <td><a href='/extensions/xep-0153.html'>XEP-0153</a></td>
 </tr>
 </table>
-<p>* Note: The schemas provided here are the latest versions from the <a href="http://www.jabberstudio.org/cgi-bin/viewcvs.cgi/cvs/xmpp/schemas/">CVS repository</a>, incorporating expected changes as reflected in <a href='/internet-drafts/draft-saintandre-rfc3920bis-01.html'>rfc3920bis</a> and <a href='/internet-drafts/draft-saintandre-rfc3921bis-01.html'>rfc3921bis</a>.</p>
-<!--#include virtual="/includes/foot.txt" -->
+<p>* Note: The schemas provided here are the latest versions from the <a href='http://www.jabberstudio.org/cgi-bin/viewcvs.cgi/cvs/xmpp/schemas/'>CVS repository</a>, incorporating expected changes as reflected in <a href='/internet-drafts/draft-saintandre-rfc3920bis-01.html'>rfc3920bis</a> and <a href='/internet-drafts/draft-saintandre-rfc3921bis-01.html'>rfc3921bis</a>.</p>
+<!--#include virtual='/includes/foot.txt' -->
