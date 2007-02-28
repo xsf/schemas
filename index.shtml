@@ -4,7 +4,7 @@
 <title>XMPP Schemas</title>
 <!--#include virtual='/includes/head.txt' -->
 <h2>XMPP Schemas</h2>
-<p style='font-style: italic'>Last Updated: 2006-10-04</p>
+<p style='font-style: italic'>Last Updated: 2007-02-28</p>
 <p>The wire protocols defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are described formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
 <p style='font-style: italic'>Note: The following table is sortable, just click on the headers (click twice to reverse the sort order).</p>
 <table border='1' cellpadding='3' cellspacing='0' class='sortable' id='xeplist'>
@@ -403,6 +403,11 @@
   <td>urn:ietf:params:xml:ns:xmpp-tls</td>
   <td><a href='tls.xsd'>tls.xsd</a></td>
   <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:xbosh</td>
+  <td><a href='xbosh.xsd'>xbosh.xsd</a></td>
+  <td><a href='/extensions/xep-0206.html'>XEP-0206</a></td>
 </tr>
 <tr class='tablebody'>
   <td>vcard-temp:x:update</td>
