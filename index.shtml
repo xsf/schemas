@@ -297,7 +297,7 @@
 <tr class='tablebody'>
   <td>jabber:iq:time</td>
   <td><a href='iq-time.xsd'>iq-time.xsd</a></td>
-  <td><a href='/extensions/xep-0090.html'>XEP-0090</a></td>
+  <td>DEPRECATED</a></td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:iq:version</td>
@@ -403,6 +403,11 @@
   <td>urn:ietf:params:xml:ns:xmpp-tls</td>
   <td><a href='tls.xsd'>tls.xsd</a></td>
   <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:time</td>
+  <td><a href='time.xsd'>time.xsd</a></td>
+  <td><a href='/extensions/xep-0202.html'>XEP-0202</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:xmpp:xbosh</td>
