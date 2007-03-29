@@ -297,7 +297,7 @@
 <tr class='tablebody'>
   <td>jabber:iq:time</td>
   <td><a href='iq-time.xsd'>iq-time.xsd</a></td>
-  <td>DEPRECATED</a></td>
+  <td>DEPRECATED</td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:iq:version</td>
@@ -322,7 +322,7 @@
 <tr class='tablebody'>
   <td>jabber:x:delay</td>
   <td><a href='x-delay.xsd'>x-delay.xsd</a></td>
-  <td><a href='/extensions/xep-0091.html'>XEP-0091</a></td>
+  <td>DEPRECATED</td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:x:encrypted</td>
@@ -403,6 +403,11 @@
   <td>urn:ietf:params:xml:ns:xmpp-tls</td>
   <td><a href='tls.xsd'>tls.xsd</a></td>
   <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:delay</td>
+  <td><a href='delay.xsd'>delay.xsd</a></td>
+  <td><a href='/extensions/xep-0203.html'>XEP-0203</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:xmpp:time</td>
