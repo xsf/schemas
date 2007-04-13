@@ -10,6 +10,10 @@
     <xs:documentation>
       The protocol documented by this schema is defined in
       XEP-0091: http://www.xmpp.org/extensions/xep-0091.html
+
+      NOTE: This protocol has been deprecated in favor of the 
+            Delayed Delivery protocol specified in XEP-0203:
+            http://www.xmpp.org/extensions/xep-0203.html
     </xs:documentation>
   </xs:annotation>
 
