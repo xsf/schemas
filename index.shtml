@@ -367,7 +367,7 @@
 <tr class='tablebody'>
   <td>storage:rosternotes</td>
   <td><a href='rosternotes.xsd'>rosternotes.xsd</a></td>
-  <td><a href='/extensions/xep-0045.html'>XEP-0045</a></td>
+  <td><a href='/extensions/xep-0145.html'>XEP-0145</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:ietf:params:xml:ns:xmpp-bind</td>
