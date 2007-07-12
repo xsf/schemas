@@ -425,5 +425,5 @@
   <td><a href='/extensions/xep-0153.html'>XEP-0153</a></td>
 </tr>
 </table>
-<p>* Note: The schemas provided here are the latest versions from the <a href='http://www.jabberstudio.org/cgi-bin/viewcvs.cgi/cvs/xmpp/schemas/'>CVS repository</a>, incorporating expected changes as reflected in <a href='/internet-drafts/draft-saintandre-rfc3920bis-01.html'>rfc3920bis</a> and <a href='/internet-drafts/draft-saintandre-rfc3921bis-01.html'>rfc3921bis</a>.</p>
+<p>* Note: The core XMPP schemas provided here are the latest versions from the <a href='/xsf/sourcecontrol.shtml'>source control repository</a>, incorporating errata and community consensus regarding potential modifications as reflected in rfc3920bis and rfc3921bis located at &lt;<a href='/internet-drafts/'>http://www.xmpp.org/internet-drafts/</a>&gt;.</p>
 <!--#include virtual='/includes/foot.txt' -->
