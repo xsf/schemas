@@ -40,17 +40,27 @@
           <xs:attribute name='feature' use='required'>
             <xs:simpleType>
               <xs:restriction base='xs:NCName'>
+                <xs:enumeration value='access-authorize'/>
+                <xs:enumeration value='access-open'/>
+                <xs:enumeration value='access-presence'/>
+                <xs:enumeration value='access-roster'/>
+                <xs:enumeration value='access-whitelist'/>
+                <xs:enumeration value='auto-create'/>
+                <xs:enumeration value='auto-subscribe'/>
                 <xs:enumeration value='collections'/>
                 <xs:enumeration value='config-node'/>
                 <xs:enumeration value='create-and-configure'/>
                 <xs:enumeration value='create-nodes'/>
                 <xs:enumeration value='delete-any'/>
                 <xs:enumeration value='delete-nodes'/>
+                <xs:enumeration value='filtered-notifications'/>
                 <xs:enumeration value='get-pending'/>
                 <xs:enumeration value='instant-nodes'/>
                 <xs:enumeration value='item-ids'/>
+                <xs:enumeration value='last-published'/>
                 <xs:enumeration value='leased-subscription'/>
                 <xs:enumeration value='manage-subscriptions'/>
+                <xs:enumeration value='member-affiliation'/>
                 <xs:enumeration value='meta-data'/>
                 <xs:enumeration value='modify-affiliations'/>
                 <xs:enumeration value='multi-collection'/>
@@ -58,7 +68,9 @@
                 <xs:enumeration value='outcast-affiliation'/>
                 <xs:enumeration value='persistent-items'/>
                 <xs:enumeration value='presence-notifications'/>
+                <xs:enumeration value='presence-subscribe'/>
                 <xs:enumeration value='publish'/>
+                <xs:enumeration value='publish-options'/>
                 <xs:enumeration value='publisher-affiliation'/>
                 <xs:enumeration value='purge-nodes'/>
                 <xs:enumeration value='retract-items'/>
@@ -76,6 +88,7 @@
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
+
   <xs:element name='unsupported-access-model' type='empty'/>
 
   <xs:simpleType name='empty'>
