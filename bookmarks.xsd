@@ -16,20 +16,9 @@
   <xs:element name='storage'>
     <xs:complexType>
       <xs:choice>
-        <xs:element ref='url'/>
         <xs:element ref='conference'/>
+        <xs:element ref='url'/>
       </xs:choice>
-    </xs:complexType>
-  </xs:element>
-
-  <xs:element name='url'>
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base='empty'>
-          <xs:attribute name='name' type='xs:string' use='required'/>
-          <xs:attribute name='url' type='xs:string' use='required'/>
-        </xs:extension>
-      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
 
@@ -42,6 +31,17 @@
       <xs:attribute name='autojoin' type='xs:boolean' use='optional' default='false'/>
       <xs:attribute name='jid' type='xs:string' use='required'/>
       <xs:attribute name='name' type='xs:string' use='required'/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name='url'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='empty'>
+          <xs:attribute name='name' type='xs:string' use='required'/>
+          <xs:attribute name='url' type='xs:string' use='required'/>
+        </xs:extension>
+      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
 
