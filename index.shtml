@@ -191,7 +191,7 @@
 <tr class='tablebody'>
   <td>http://jabber.org/protocol/tune</td>
   <td><a href='tune.xsd'>tune.xsd</a></td>
-  <td><a href='/extensions/xep-0095.html'>XEP-0095</a></td>
+  <td><a href='/extensions/xep-0118.html'>XEP-0118</a></td>
 </tr>
 <tr class='tablebody'>
   <td>http://jabber.org/protocol/waitinglist</td>
@@ -267,7 +267,7 @@
 <tr class='tablebody'>
   <td>jabber:iq:privacy</td>
   <td><a href='privacy.xsd'>privacy.xsd</a></td>
-  <td><a href='/rfcs/rfc3921.html'>RFC 3921</a> *</td>
+  <td><a href='/extensions/xep-0016.html'>XEP-0016</a></td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:iq:private</td>
@@ -347,7 +347,7 @@
 <tr class='tablebody'>
   <td>jabber:x:roster</td>
   <td><a href='x-roster.xsd'>x-roster.xsd</a></td>
-  <td><a href='/extensions/xep-0093.html'>XEP-0093</a></td>
+  <td>DEPRECATED</td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:x:signed</td>
