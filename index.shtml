@@ -4,8 +4,8 @@
 <title>XMPP Schemas</title>
 <!--#include virtual='/includes/head.txt' -->
 <h2>XMPP Schemas</h2>
-<p style='font-style: italic'>Last Updated: 2007-11-07</p>
-<p>The wire protocols defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are described formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
+<p style='font-style: italic'>Last Updated: 2008-01-05</p>
+<p>The <a href='/protocols/'>XMPP protocols</a> defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are defined formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
 <p style='font-style: italic'>Note: The following table is sortable, just click on the headers (click twice to reverse the sort order).</p>
 <table border='1' cellpadding='3' cellspacing='0' class='sortable' id='xeplist'>
 <tr class='tablebody'>
@@ -413,6 +413,16 @@
   <td>urn:xmpp:avatar:metadata</td>
   <td><a href='avatar-metadata.xsd'>avatar-metadata.xsd</a></td>
   <td><a href='/extensions/xep-0084.html'>XEP-0084</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:blocking</td>
+  <td><a href='blocking.xsd'>blocking.xsd</a></td>
+  <td><a href='/extensions/xep-0191.html'>XEP-0191</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:blocking:errors</td>
+  <td><a href='blocking-errors.xsd'>blocking-errors.xsd</a></td>
+  <td><a href='/extensions/xep-0191.html'>XEP-0191</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:xmpp:delay</td>
