@@ -17,10 +17,18 @@
     <xs:complexType>
       <xs:sequence minOccurs='0'>
         <xs:element name='artist' type='xs:string' minOccurs='0'/>
-        <xs:element name='title' type='xs:string' minOccurs='0'/>
-        <xs:element name='source' type='xs:string' minOccurs='0'/>
-        <xs:element name='track' type='xs:string' minOccurs='0'/>
         <xs:element name='length' type='xs:unsignedShort' minOccurs='0'/>
+        <xs:element name='rating'>
+          <xs:simpleType>
+            <xs:restriction base='xs:positiveInteger'>
+              <xs:maxInclusive value='10'/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name='source' type='xs:string' minOccurs='0'/>
+        <xs:element name='title' type='xs:string' minOccurs='0'/>
+        <xs:element name='track' type='xs:string' minOccurs='0'/>
+        <xs:element name='uri' type='xs:anyURI' minOccurs='0'/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
