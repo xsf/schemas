@@ -31,6 +31,7 @@
         <xs:element name='postalcode' minOccurs='0' type='xs:string'/>
         <xs:element name='region' minOccurs='0' type='xs:string'/>
         <xs:element name='room' minOccurs='0' type='xs:string'/>
+        <xs:element name='speed' minOccurs='0' type='xs:decimal'/>
         <xs:element name='street' minOccurs='0' type='xs:string'/>
         <xs:element name='text' minOccurs='0' type='xs:string'/>
         <xs:element name='timestamp' minOccurs='0' type='xs:datetime'/>
