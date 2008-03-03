@@ -18,6 +18,7 @@
       <xs:simpleContent>
         <xs:extension base='empty'>
           <xs:attribute name='ext' type='xs:NMTOKENS' use='optional'/>
+          <xs:attribute name='hash' type='xs:NMTOKEN' use='required'/>
           <xs:attribute name='node' type='xs:string' use='required'/>
           <xs:attribute name='ver' type='xs:string' use='required'/>
         </xs:extension>
