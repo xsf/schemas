@@ -78,16 +78,6 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:element name='node'>
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base='empty'>
-          <xs:attribute name='id' type='xs:string' use='required'/>
-        </xs:extension>
-      </xs:simpleContent>
-    </xs:complexType>
-  </xs:element>
-
   <xs:element name='purge'>
     <xs:complexType>
       <xs:simpleContent>
