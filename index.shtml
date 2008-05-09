@@ -4,7 +4,7 @@
 <title>XMPP Schemas</title>
 <!--#include virtual='/includes/head.txt' -->
 <h2>XMPP Schemas</h2>
-<p style='font-style: italic'>Last Updated: 2008-01-05</p>
+<p style='font-style: italic'>Last Updated: 2008-05-09</p>
 <p>The <a href='/protocols/'>XMPP protocols</a> defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are defined formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
 <p style='font-style: italic'>Note: The following table is sortable, just click on the headers (click twice to reverse the sort order).</p>
 <table border='1' cellpadding='3' cellspacing='0' class='sortable' id='xeplist'>
@@ -428,6 +428,16 @@
   <td>urn:xmpp:delay</td>
   <td><a href='delay.xsd'>delay.xsd</a></td>
   <td><a href='/extensions/xep-0203.html'>XEP-0203</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:langtrans</td>
+  <td><a href='langtrans.xsd'>langtrans.xsd</a></td>
+  <td><a href='/extensions/xep-0171.html'>XEP-0171</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:langtrans#items</td>
+  <td><a href='langtrans-items.xsd'>langtrans-items.xsd</a></td>
+  <td><a href='/extensions/xep-0171.html'>XEP-0171</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:xmpp:ping</td>
