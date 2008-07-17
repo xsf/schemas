@@ -405,6 +405,11 @@
   <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
 </tr>
 <tr class='tablebody'>
+  <td>urn:xmpp:archive</td>
+  <td><a href='archive.xsd'>archive.xsd</a></td>
+  <td><a href='/extensions/xep-0136.html'>XEP-0136</a></td>
+</tr>
+<tr class='tablebody'>
   <td>urn:xmpp:avatar:data</td>
   <td><a href='avatar-data.xsd'>avatar-data.xsd</a></td>
   <td><a href='/extensions/xep-0084.html'>XEP-0084</a></td>
