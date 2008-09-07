@@ -2,7 +2,7 @@
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
 <head>
 <title>XMPP Schemas</title>
-<!--#include virtual='/includes/head.txt' -->
+<!--#include virtual="/includes/head.txt" -->
 <h2>XMPP Schemas</h2>
 <p style='font-style: italic'>Last Updated: 2008-09-03</p>
 <p>The <a href='/protocols/'>XMPP protocols</a> defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are defined formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
@@ -486,4 +486,4 @@
 </tr>
 </table>
 <p>* Note: The core XMPP schemas provided here are the latest versions from the <a href='/xsf/sourcecontrol.shtml'>source control repository</a>, incorporating errata and community consensus regarding potential modifications as reflected in rfc3920bis and rfc3921bis located at &lt;<a href='/internet-drafts/'>http://www.xmpp.org/internet-drafts/</a>&gt;.</p>
-<!--#include virtual='/includes/foot.txt' -->
+<!--#include virtual="/includes/foot.txt" -->
