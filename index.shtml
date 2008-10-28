@@ -242,7 +242,7 @@
 <tr class='tablebody'>
   <td>jabber:iq:auth</td>
   <td><a href='iq-auth.xsd'>iq-auth.xsd</a></td>
-  <td><a href='/extensions/xep-0078.html'>XEP-0078</a></td>
+  <td>OBSOLETE</td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:iq:gateway</td>
