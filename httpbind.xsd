@@ -17,6 +17,9 @@
   <xs:import namespace='http://etherx.jabber.org/streams'
              schemaLocation='http://www.xmpp.org/schemas/streams.xsd'/>
 
+  <xs:import namespace='http://www.w3.org/XML/1998/namespace'
+             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
+
   <xs:element name='body'>
     <xs:complexType>
       <xs:choice xmlns:stream='http://etherx.jabber.org/streams'>
@@ -84,7 +87,7 @@
         </xs:simpleType>
       </xs:attribute>
       <xs:attribute name='wait' type='xs:short' use='optional'/>
-      <xs:attribute name='xml:lang' type='xs:string' use='optional'/>
+      <xs:attribute ref='xml:lang' use='optional'/>
       <xs:anyAttribute namespace='##other' processContents='lax'/>
     </xs:complexType>
   </xs:element>
