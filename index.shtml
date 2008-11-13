@@ -410,6 +410,11 @@
   <td><a href='/extensions/xep-0136.html'>XEP-0136</a></td>
 </tr>
 <tr class='tablebody'>
+  <td>urn:xmpp:attention:0</td>
+  <td><a href='attention.xsd'>attention.xsd</a></td>
+  <td><a href='/extensions/xep-0224.html'>XEP-0224</a></td>
+</tr>
+<tr class='tablebody'>
   <td>urn:xmpp:avatar:data</td>
   <td><a href='avatar-data.xsd'>avatar-data.xsd</a></td>
   <td><a href='/extensions/xep-0084.html'>XEP-0084</a></td>
