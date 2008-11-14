@@ -159,7 +159,10 @@
 
   <xs:element name='subscriptions'>
     <xs:complexType>
-      <xs:element ref='subscription' minOccurs='0' maxOccurs='unbounded'/>
+      <xs:sequence minOccurs='0' maxOccurs='unbounded'>
+        <xs:element ref='subscription'/>
+      </xs:sequence>
+      <xs:attribute name='node' type='xs:string' use='optional'/>
     </xs:complexType>
   </xs:element>
 
