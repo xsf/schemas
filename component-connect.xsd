@@ -7,14 +7,18 @@
     xmlns='jabber:component:connect'
     elementFormDefault='qualified'>
 
-  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-streams'/>
-
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
       XEP-0114: http://www.xmpp.org/extensions/xep-0114.html
     </xs:documentation>
   </xs:annotation>
+
+  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-streams'/>
+             schemaLocation='http://xmpp.org/schemas/streamerror.xsd'/>
+
+  <xs:import namespace='http://www.w3.org/XML/1998/namespace'
+             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
 
   <xs:element name='handshake' type='xs:string'/>
 
