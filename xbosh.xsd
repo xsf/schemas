@@ -3,8 +3,9 @@
 <xs:schema
     xmlns:xs='http://www.w3.org/2001/XMLSchema'
     targetNamespace='urn:xmpp:xbosh'
-    xmlns='urn:xmpp:xbosh'
-    elementFormDefault='qualified'>
+    xmlns='http://jabber.org/protocol/httpbind'
+    attributeFormDefault='qualified'
+    elementFormDefault='unqualified'>
 
   <xs:annotation>
     <xs:documentation>
@@ -13,22 +14,23 @@
     </xs:documentation>
   </xs:annotation>
 
+  <xs:import namespace='http://jabber.org/protocol/httpbind'
+             schemaLocation='http://www.xmpp.org/schemas/httpbind.xsd'/>
+
   <xs:import namespace='http://etherx.jabber.org/streams'
              schemaLocation='http://www.xmpp.org/schemas/streams.xsd'/>
 
   <xs:element name='body'>
     <xs:complexType>
       <xs:choice xmlns:stream='http://etherx.jabber.org/streams'>
+                 xmlns:xmpp='urn:xmpp:xbosh'>
         <xs:element ref='stream:features'
                 minOccurs='0'
                 maxOccurs='1'/>
-        <xs:any namespace='urn:ietf:params:xml:ns:xmpp-tls'
+        <xs:element ref='stream:error'
                 minOccurs='0'
                 maxOccurs='1'/>
         <xs:any namespace='urn:ietf:params:xml:ns:xmpp-sasl'
-                minOccurs='0'
-                maxOccurs='1'/>
-        <xs:any namespace='urn:ietf:params:xml:ns:xmpp-streams'
                 minOccurs='0'
                 maxOccurs='1'/>
         <xs:any namespace='jabber:client'
@@ -43,8 +45,14 @@
                 maxOccurs='unbounded'
                 processContents='lax'/>
       </xs:choice>
-      <xs:attribute name='restart' type='xs:boolean' use='optional' default='false'/>
-      <xs:attribute name='version' type='xs:string' use='optional' default='1.0'/>
+      <xs:attribute name='xmpp:restart' 
+                    type='xs:boolean'
+                    use='optional'
+                    default='false'/>
+      <xs:attribute name='xmpp:version' 
+                    type='xs:string'
+                    use='optional'
+                    default='1.0'/>
       <xs:anyAttribute namespace='##any' processContents='lax'/>
     </xs:complexType>
   </xs:element>
