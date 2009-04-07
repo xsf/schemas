@@ -7,11 +7,11 @@
     elementFormDefault='unqualified'>
 
   <xs:import namespace='jabber:client'
-             schemaLocation='http://www.xmpp.org/schemas/client.xsd'/>
+             schemaLocation='http://xmpp.org/schemas/jabber-client.xsd'/>
   <xs:import namespace='jabber:server'
-             schemaLocation='http://www.xmpp.org/schemas/server.xsd'/>
+             schemaLocation='http://xmpp.org/schemas/jabber-server.xsd'/>
   <xs:import namespace='jabber:server:dialback'
-             schemaLocation='http://www.xmpp.org/schemas/dialback.xsd'/>
+             schemaLocation='http://xmpp.org/schemas/dialback.xsd'/>
 
   <xs:element name='stream'>
     <xs:complexType>
