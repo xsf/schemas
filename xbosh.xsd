@@ -3,9 +3,9 @@
 <xs:schema
     xmlns:xs='http://www.w3.org/2001/XMLSchema'
     targetNamespace='urn:xmpp:xbosh'
-    xmlns='http://jabber.org/protocol/httpbind'
+    xmlns='urn:xmpp:xbosh'
     attributeFormDefault='qualified'
-    elementFormDefault='unqualified'>
+    elementFormDefault='qualified'>
 
   <xs:annotation>
     <xs:documentation>
@@ -14,47 +14,14 @@
     </xs:documentation>
   </xs:annotation>
 
-  <xs:import namespace='http://jabber.org/protocol/httpbind'
-             schemaLocation='http://www.xmpp.org/schemas/httpbind.xsd'/>
+  <xs:attribute name='restart' 
+                type='xs:boolean'
+                use='optional'
+                default='false'/>
 
-  <xs:import namespace='http://etherx.jabber.org/streams'
-             schemaLocation='http://www.xmpp.org/schemas/streams.xsd'/>
-
-  <xs:element name='body'>
-    <xs:complexType>
-      <xs:choice xmlns:stream='http://etherx.jabber.org/streams'>
-                 xmlns:xmpp='urn:xmpp:xbosh'>
-        <xs:element ref='stream:features'
-                minOccurs='0'
-                maxOccurs='1'/>
-        <xs:element ref='stream:error'
-                minOccurs='0'
-                maxOccurs='1'/>
-        <xs:any namespace='urn:ietf:params:xml:ns:xmpp-sasl'
-                minOccurs='0'
-                maxOccurs='1'/>
-        <xs:any namespace='jabber:client'
-                minOccurs='0'
-                maxOccurs='unbounded'/>
-        <xs:element name='uri'
-                minOccurs='0'
-                maxOccurs='1'
-                type='xs:string'/>
-        <xs:any namespace='##any'
-                minOccurs='0'
-                maxOccurs='unbounded'
-                processContents='lax'/>
-      </xs:choice>
-      <xs:attribute name='xmpp:restart' 
-                    type='xs:boolean'
-                    use='optional'
-                    default='false'/>
-      <xs:attribute name='xmpp:version' 
-                    type='xs:string'
-                    use='optional'
-                    default='1.0'/>
-      <xs:anyAttribute namespace='##any' processContents='lax'/>
-    </xs:complexType>
-  </xs:element>
+  <xs:attribute name='version' 
+                type='xs:string'
+                use='optional'
+                default='1.0'/>
 
 </xs:schema>
