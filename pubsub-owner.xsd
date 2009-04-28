@@ -22,6 +22,7 @@
       <xs:choice>
         <xs:element ref='affiliations'/>
         <xs:element ref='configure'/>
+        <xs:element ref='default'/>
         <xs:element ref='delete'/>
         <xs:element ref='purge'/>
         <xs:element ref='subscriptions'/>
