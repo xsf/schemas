@@ -14,30 +14,12 @@
     </xs:documentation>
   </xs:annotation>
 
-  <xs:import namespace='http://etherx.jabber.org/streams'
-             schemaLocation='http://www.xmpp.org/schemas/streams.xsd'/>
-
   <xs:import namespace='http://www.w3.org/XML/1998/namespace'
              schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
 
   <xs:element name='body'>
     <xs:complexType>
-      <xs:choice xmlns:stream='http://etherx.jabber.org/streams'>
-        <xs:element ref='stream:features'
-                minOccurs='0'
-                maxOccurs='1'/>
-        <xs:any namespace='urn:ietf:params:xml:ns:xmpp-tls'
-                minOccurs='0'
-                maxOccurs='1'/>
-        <xs:any namespace='urn:ietf:params:xml:ns:xmpp-sasl'
-                minOccurs='0'
-                maxOccurs='1'/>
-        <xs:any namespace='urn:ietf:params:xml:ns:xmpp-streams'
-                minOccurs='0'
-                maxOccurs='1'/>
-        <xs:any namespace='jabber:client'
-                minOccurs='0'
-                maxOccurs='unbounded'/>
+      <xs:choice>
         <xs:element name='uri'
                 minOccurs='0'
                 maxOccurs='1'
@@ -48,6 +30,7 @@
                 processContents='lax'/>
       </xs:choice>
       <xs:attribute name='accept' type='xs:string' use='optional'/>
+      <xs:attribute name='ack' type='xs:positiveInteger' use='optional'/>
       <xs:attribute name='authid' type='xs:string' use='optional'/>
       <xs:attribute name='charsets' type='xs:NMTOKENS' use='optional'/>
       <xs:attribute name='condition' use='optional'>
@@ -66,17 +49,21 @@
         </xs:simpleType>
       </xs:attribute>
       <xs:attribute name='content' type='xs:string' use='optional'/>
-      <xs:attribute name='hold' type='xs:byte' use='optional'/>
-      <xs:attribute name='inactivity' type='xs:short' use='optional'/>
+      <xs:attribute name='from' type='xs:string' use='optional'/>
+      <xs:attribute name='hold' type='xs:unsignedByte' use='optional'/>
+      <xs:attribute name='inactivity' type='xs:unsignedShort' use='optional'/>
       <xs:attribute name='key' type='xs:string' use='optional'/>
+      <xs:attribute name='maxpause' type='xs:unsignedShort' use='optional'/>
       <xs:attribute name='newkey' type='xs:string' use='optional'/>
-      <xs:attribute name='polling' type='xs:short' use='optional'/>
-      <xs:attribute name='requests' type='xs:byte' use='optional'/>
+      <xs:attribute name='pause' type='xs:unsignedShort' use='optional'/>
+      <xs:attribute name='polling' type='xs:unsignedShort' use='optional'/>
+      <xs:attribute name='report' type='xs:positiveInteger' use='optional'/>
+      <xs:attribute name='requests' type='xs:unsignedByte' use='optional'/>
       <xs:attribute name='rid' type='xs:positiveInteger' use='optional'/>
       <xs:attribute name='route' type='xs:string' use='optional'/>
-      <xs:attribute name='secure' type='xs:boolean' use='optional' default='false'/>
       <xs:attribute name='sid' type='xs:string' use='optional'/>
       <xs:attribute name='stream' type='xs:string' use='optional'/>
+      <xs:attribute name='time' type='xs:unsignedShort' use='optional'/>
       <xs:attribute name='to' type='xs:string' use='optional'/>
       <xs:attribute name='type' use='optional'>
         <xs:simpleType>
@@ -86,7 +73,8 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name='wait' type='xs:short' use='optional'/>
+      <xs:attribute name='ver' type='xs:string' use='optional'/>
+      <xs:attribute name='wait' type='xs:unsignedShort' use='optional'/>
       <xs:attribute ref='xml:lang' use='optional'/>
       <xs:anyAttribute namespace='##other' processContents='lax'/>
     </xs:complexType>
