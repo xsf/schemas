@@ -4,7 +4,7 @@
 <title>XMPP Schemas</title>
 <!--#include virtual="/includes/head.txt" -->
 <h2>XMPP Schemas</h2>
-<p style='font-style: italic'>Last Updated: 2008-09-03</p>
+<p style='font-style: italic'>Last Updated: 2009-06-10</p>
 <p>The <a href='/protocols/'>XMPP protocols</a> defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are defined formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
 <p style='font-style: italic'>Note: The following table is sortable, just click on the headers (click twice to reverse the sort order).</p>
 <table border='1' cellpadding='3' cellspacing='0' class='sortable' id='xeplist'>
@@ -448,6 +448,41 @@
   <td>urn:xmpp:delay</td>
   <td><a href='delay.xsd'>delay.xsd</a></td>
   <td><a href='/extensions/xep-0203.html'>XEP-0203</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:jingle:1</td>
+  <td><a href='jingle.xsd'>jingle.xsd</a></td>
+  <td><a href='/extensions/xep-0166.html'>XEP-0166</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:jingle:errors:1</td>
+  <td><a href='jingle-errors.xsd'>jingle-errors.xsd</a></td>
+  <td><a href='/extensions/xep-0166.html'>XEP-0166</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:jingle:apps:rtp:1</td>
+  <td><a href='jingle-apps-rtp.xsd'>jingle-apps-rtp.xsd</a></td>
+  <td><a href='/extensions/xep-0167.html'>XEP-0167</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:jingle:apps:rtp:errors:1</td>
+  <td><a href='jingle-apps-rtp-errors.xsd'>jingle-apps-rtp-errors.xsd</a></td>
+  <td><a href='/extensions/xep-0167.html'>XEP-0167</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:jingle:apps:rtp:info:1</td>
+  <td><a href='jingle-apps-rtp-info.xsd'>jingle-apps-rtp-info.xsd</a></td>
+  <td><a href='/extensions/xep-0167.html'>XEP-0167</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:jingle:transports:ice-udp:1</td>
+  <td><a href='jingle-transports-ice-udp.xsd'>jingle-transports-ice-udp.xsd</a></td>
+  <td><a href='/extensions/xep-0176.html'>XEP-0176</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:jingle:transports:raw-udp:1</td>
+  <td><a href='jingle-transports-raw-udp.xsd'>jingle-transports-raw-udp.xsd</a></td>
+  <td><a href='/extensions/xep-0177.html'>XEP-0177</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:xmpp:langtrans</td>
