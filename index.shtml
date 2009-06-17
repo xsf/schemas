@@ -4,7 +4,7 @@
 <title>XMPP Schemas</title>
 <!--#include virtual="/includes/head.txt" -->
 <h2>XMPP Schemas</h2>
-<p style='font-style: italic'>Last Updated: 2009-06-10</p>
+<p style='font-style: italic'>Last Updated: 2009-06-17</p>
 <p>The <a href='/protocols/'>XMPP protocols</a> defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are defined formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
 <p style='font-style: italic'>Note: The following table is sortable, just click on the headers (click twice to reverse the sort order).</p>
 <table border='1' cellpadding='3' cellspacing='0' class='sortable' id='xeplist'>
@@ -508,6 +508,11 @@
   <td>urn:xmpp:receipts</td>
   <td><a href='receipts.xsd'>receipts.xsd</a></td>
   <td><a href='/extensions/xep-0184.html'>XEP-0184</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:sm:2</td>
+  <td><a href='sm.xsd'>sm.xsd</a></td>
+  <td><a href='/extensions/xep-0198.html'>XEP-0198</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:xmpp:time</td>
