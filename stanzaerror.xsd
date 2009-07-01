@@ -6,6 +6,9 @@
     xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
     elementFormDefault='qualified'>
 
+  <xs:import namespace='http://www.w3.org/XML/1998/namespace'
+             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
+
   <xs:element name='bad-request' type='empty'/>
   <xs:element name='conflict' type='empty'/>
   <xs:element name='feature-not-implemented' type='empty'/>

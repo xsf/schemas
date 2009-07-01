@@ -103,7 +103,8 @@
       <xs:attribute name='code' use='required'>
         <xs:simpleType>
           <xs:restriction base='xs:int'>
-            <xs:length value='3'/>
+            <xs:minInclusive value='100'/>
+            <xs:maxInclusive value='999'/>
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>

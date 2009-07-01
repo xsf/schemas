@@ -9,13 +9,13 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      XEP-0060: http://www.xmpp.org/extensions/xep-0060.html
+      XEP-0060: http://xmpp.org/extensions/xep-0060.html
     </xs:documentation>
   </xs:annotation>
 
   <xs:import
       namespace='jabber:x:data'
-      schemaLocation='http://www.xmpp.org/schemas/x-data.xsd'/>
+      schemaLocation='http://xmpp.org/schemas/x-data.xsd'/>
 
   <xs:element name='pubsub'>
     <xs:complexType>
