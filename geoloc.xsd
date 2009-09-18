@@ -16,11 +16,13 @@
   <xs:element name='geoloc'>
     <xs:complexType>
       <xs:sequence minOccurs='0'>
+        <xs:element name='accuracy' minOccurs='0' type='xs:decimal'/>
         <xs:element name='alt' minOccurs='0' type='xs:decimal'/>
         <xs:element name='area' minOccurs='0' type='xs:string'/>
         <xs:element name='bearing' minOccurs='0' type='xs:decimal'/>
         <xs:element name='building' minOccurs='0' type='xs:string'/>
         <xs:element name='country' minOccurs='0' type='xs:string'/>
+        <xs:element name='countrycode' minOccurs='0' type='xs:string'/>
         <xs:element name='datum' minOccurs='0' type='xs:string'/>
         <xs:element name='description' minOccurs='0' type='xs:string'/>
         <xs:element name='error' minOccurs='0' type='xs:decimal'/>
