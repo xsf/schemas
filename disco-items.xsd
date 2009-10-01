@@ -26,21 +26,20 @@
     <xs:complexType>
       <xs:simpleContent>
         <xs:extension base='empty'>
-          <xs:attribute name='action' use='optional'>
-            <xs:simpleType>
-              <xs:restriction base='xs:NCName'>
-                <xs:enumeration value='remove'/>
-                <xs:enumeration value='update'/>
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:attribute>
-          <xs:attribute name='jid' type='xs:string' use='required'/>
+          <xs:attribute name='jid' type='fullJIDType' use='required'/>
           <xs:attribute name='name' type='xs:string' use='optional'/>
           <xs:attribute name='node' type='xs:string' use='optional'/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
+
+  <xs:simpleType name='fullJIDType'>
+    <xs:restriction base='xs:string'>
+      <xs:minLength value='8'/>
+      <xs:maxLength value='3071'/>
+    </xs:restriction>
+  </xs:simpleType>
 
   <xs:simpleType name='empty'>
     <xs:restriction base='xs:string'>
