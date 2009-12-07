@@ -22,6 +22,10 @@
               type='xs:string'
               use='required'/>
           <xs:attribute
+              name='password'
+              type='xs:string'
+              use='optional'/>
+          <xs:attribute
               name='reason'
               type='xs:string'
               use='optional'/>
