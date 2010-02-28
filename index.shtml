@@ -455,6 +455,11 @@
   <td><a href='/extensions/xep-0203.html'>XEP-0203</a></td>
 </tr>
 <tr class='tablebody'>
+  <td>urn:xmpp:features:rosterver</td>
+  <td><a href='delay.xsd'>versioning-feature.xsd</a></td>
+  <td><a href='/extensions/xep-0237.html'>XEP-0237</a></td>
+</tr>
+<tr class='tablebody'>
   <td>urn:xmpp:jingle:1</td>
   <td><a href='jingle.xsd'>jingle.xsd</a></td>
   <td><a href='/extensions/xep-0166.html'>XEP-0166</a></td>
