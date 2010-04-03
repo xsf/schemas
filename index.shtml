@@ -266,7 +266,7 @@
 </tr>
 <tr class='tablebody'>
   <td>jabber:iq:privacy</td>
-  <td><a href='privacy.xsd'>privacy.xsd</a></td>
+  <td><a href='iq-privacy.xsd'>iq-privacy.xsd</a></td>
   <td><a href='/extensions/xep-0016.html'>XEP-0016</a></td>
 </tr>
 <tr class='tablebody'>
