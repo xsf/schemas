@@ -18,6 +18,10 @@
                 type='xs:boolean'
                 default='false'/>
 
+  <xs:attribute name='restartlogic' 
+                type='xs:boolean'
+                default='false'/>
+
   <xs:attribute name='version' 
                 type='xs:string'
                 default='1.0'/>
