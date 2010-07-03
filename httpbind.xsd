@@ -36,10 +36,14 @@
       <xs:attribute name='condition' use='optional'>
         <xs:simpleType>
           <xs:restriction base='xs:NCName'>
+            <xs:enumeration value='bad-request'/>
             <xs:enumeration value='host-gone'/>
             <xs:enumeration value='host-unknown'/>
             <xs:enumeration value='improper-addressing'/>
             <xs:enumeration value='internal-server-error'/>
+            <xs:enumeration value='item-not-found'/>
+            <xs:enumeration value='other-request'/>
+            <xs:enumeration value='policy-violation'/>
             <xs:enumeration value='remote-connection-failed'/>
             <xs:enumeration value='remote-stream-error'/>
             <xs:enumeration value='see-other-uri'/>
@@ -79,5 +83,3 @@
       <xs:anyAttribute namespace='##other' processContents='lax'/>
     </xs:complexType>
   </xs:element>
-
-</xs:schema>
