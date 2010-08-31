@@ -8,17 +8,14 @@
 
   <xs:element name='starttls'>
     <xs:complexType>
-      <xs:sequence>
-        <xs:element
-            name='required'
-            minOccurs='0'
-            maxOccurs='1'
-            type='empty'/>
-      </xs:sequence>
+      <xs:choice minOccurs='0' maxOccurs='1'>
+        <xs:element name='required' type='empty'/>
+      </xs:choice>
     </xs:complexType>
   </xs:element>
 
   <xs:element name='proceed' type='empty'/>
+
   <xs:element name='failure' type='empty'/>
 
   <xs:simpleType name='empty'>

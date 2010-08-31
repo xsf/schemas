@@ -6,9 +6,6 @@
     xmlns='urn:ietf:params:xml:ns:xmpp-streams'
     elementFormDefault='qualified'>
 
-  <xs:import namespace='http://www.w3.org/XML/1998/namespace'
-             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
-
   <xs:element name='bad-format' type='empty'/>
   <xs:element name='bad-namespace-prefix' type='empty'/>
   <xs:element name='conflict' type='empty'/>
@@ -24,6 +21,7 @@
   <xs:element name='not-authorized' type='empty'/>
   <xs:element name='policy-violation' type='empty'/>
   <xs:element name='remote-connection-failed' type='empty'/>
+  <xs:element name='reset' type='empty'/>
   <xs:element name='resource-constraint' type='empty'/>
   <xs:element name='restricted-xml' type='empty'/>
   <xs:element name='see-other-host' type='xs:string'/>
@@ -51,6 +49,7 @@
       <xs:element ref='not-authorized'/>
       <xs:element ref='policy-violation'/>
       <xs:element ref='remote-connection-failed'/>
+      <xs:element ref='reset'/>
       <xs:element ref='resource-constraint'/>
       <xs:element ref='restricted-xml'/>
       <xs:element ref='see-other-host'/>

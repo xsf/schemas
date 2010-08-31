@@ -8,24 +8,24 @@
 
   <xs:element name='bind'>
     <xs:complexType>
-      <xs:choice minOccurs='0' maxOccurs='1'>
+      <xs:choice>
         <xs:element name='resource' type='resourceType'/>
         <xs:element name='jid' type='fullJIDType'/>
       </xs:choice>
     </xs:complexType>
   </xs:element>
 
-  <xs:simpleType name='resourceType'>
-    <xs:restriction base='xs:string'>
-      <xs:minLength value='1'/>
-      <xs:maxLength value='1023'/>
-    </xs:restriction>
-  </xs:simpleType>
-
   <xs:simpleType name='fullJIDType'>
     <xs:restriction base='xs:string'>
       <xs:minLength value='8'/>
       <xs:maxLength value='3071'/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name='resourceType'>
+    <xs:restriction base='xs:string'>
+      <xs:minLength value='1'/>
+      <xs:maxLength value='1023'/>
     </xs:restriction>
   </xs:simpleType>
 

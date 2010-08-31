@@ -13,6 +13,9 @@
                     minOccurs='0'
                     maxOccurs='unbounded'/>
       </xs:sequence>
+      <xs:attribute name='ver'
+                    type='xs:string'
+                    use='optional'/>
     </xs:complexType>
   </xs:element>
 
@@ -23,18 +26,28 @@
                     minOccurs='0'
                     maxOccurs='unbounded'/>
       </xs:sequence>
-      <xs:attribute name='ask' use='optional'>
+      <xs:attribute name='approved'
+                    type='xs:boolean'
+                    use='optional'/>
+      <xs:attribute name='ask' 
+                    use='optional'>
         <xs:simpleType>
-          <xs:restriction base='xs:NCName'>
-            <xs:enumeration value='subscribe'/>
+          <xs:restriction base='xs:NMTOKEN'>
+            <xs:enumeration value='subscribed'/>
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name='jid' type='xs:string' use='required'/>
-      <xs:attribute name='name' type='xs:string' use='optional'/>
-      <xs:attribute name='subscription' use='optional'>
+      <xs:attribute name='jid'
+                    type='xs:string'
+                    use='required'/>
+      <xs:attribute name='name'
+                    type='xs:string'
+                    use='optional'/>
+      <xs:attribute name='subscription' 
+                    use='optional'
+                    default='none'>
         <xs:simpleType>
-          <xs:restriction base='xs:NCName'>
+          <xs:restriction base='xs:NMTOKEN'>
             <xs:enumeration value='both'/>
             <xs:enumeration value='from'/>
             <xs:enumeration value='none'/>

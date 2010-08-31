@@ -6,9 +6,6 @@
     xmlns='urn:ietf:params:xml:ns:xmpp-stanzas'
     elementFormDefault='qualified'>
 
-  <xs:import namespace='http://www.w3.org/XML/1998/namespace'
-             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
-
   <xs:element name='bad-request' type='empty'/>
   <xs:element name='conflict' type='empty'/>
   <xs:element name='feature-not-implemented' type='empty'/>
@@ -19,7 +16,9 @@
   <xs:element name='jid-malformed' type='empty'/>
   <xs:element name='not-acceptable' type='empty'/>
   <xs:element name='not-allowed' type='empty'/>
+  <xs:element name='not-authorized' type='empty'/>
   <xs:element name='payment-required' type='empty'/>
+  <xs:element name='policy-violation' type='empty'/>
   <xs:element name='recipient-unavailable' type='empty'/>
   <xs:element name='redirect' type='xs:string'/>
   <xs:element name='registration-required' type='empty'/>
@@ -42,8 +41,10 @@
       <xs:element ref='item-not-found'/>
       <xs:element ref='jid-malformed'/>
       <xs:element ref='not-acceptable'/>
+      <xs:element ref='not-authorized'/>
       <xs:element ref='not-allowed'/>
       <xs:element ref='payment-required'/>
+      <xs:element ref='policy-violation'/>
       <xs:element ref='recipient-unavailable'/>
       <xs:element ref='redirect'/>
       <xs:element ref='registration-required'/>

@@ -6,11 +6,8 @@
     xmlns='jabber:client'
     elementFormDefault='qualified'>
 
-  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-stanzas'
-             schemaLocation='http://xmpp.org/schemas/stanzaerror.xsd'/>
-
-  <xs:import namespace='http://www.w3.org/XML/1998/namespace'
-             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
+  <xs:import 
+      namespace='urn:ietf:params:xml:ns:xmpp-stanzas'/>
 
   <xs:element name='message'>
      <xs:complexType>
@@ -22,7 +19,8 @@
           </xs:choice>
           <xs:any     namespace='##other'
                       minOccurs='0'
-                      maxOccurs='unbounded'/>
+                      maxOccurs='unbounded'
+                      processContents='lax'/>
           <xs:element ref='error'
                       minOccurs='0'/>
         </xs:sequence>
@@ -35,9 +33,11 @@
         <xs:attribute name='to'
                       type='xs:string'
                       use='optional'/>
-        <xs:attribute name='type' use='optional' default='normal'>
+        <xs:attribute name='type' 
+                      use='optional' 
+                      default='normal'>
           <xs:simpleType>
-            <xs:restriction base='xs:NCName'>
+            <xs:restriction base='xs:NMTOKEN'>
               <xs:enumeration value='chat'/>
               <xs:enumeration value='error'/>
               <xs:enumeration value='groupchat'/>
@@ -53,7 +53,7 @@
   <xs:element name='body'>
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base='nonEmptyString'>
+        <xs:extension base='xs:string'>
           <xs:attribute ref='xml:lang' use='optional'/>
         </xs:extension>
       </xs:simpleContent>
@@ -70,7 +70,17 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:element name='thread' type='xs:NMTOKEN'/>
+  <xs:element name='thread'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='xs:NMTOKEN'>
+          <xs:attribute name='parent'
+                        type='xs:NMTOKEN'
+                        use='optional'/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
 
   <xs:element name='presence'>
     <xs:complexType>
@@ -82,7 +92,8 @@
         </xs:choice>
         <xs:any     namespace='##other'
                     minOccurs='0'
-                    maxOccurs='unbounded'/>
+                    maxOccurs='unbounded'
+                    processContents='lax'/>
         <xs:element ref='error'
                     minOccurs='0'/>
       </xs:sequence>
@@ -97,7 +108,7 @@
                     use='optional'/>
       <xs:attribute name='type' use='optional'>
         <xs:simpleType>
-          <xs:restriction base='xs:NCName'>
+          <xs:restriction base='xs:NMTOKEN'>
             <xs:enumeration value='error'/>
             <xs:enumeration value='probe'/>
             <xs:enumeration value='subscribe'/>
@@ -114,7 +125,7 @@
 
   <xs:element name='show'>
     <xs:simpleType>
-      <xs:restriction base='xs:NCName'>
+      <xs:restriction base='xs:NMTOKEN'>
         <xs:enumeration value='away'/>
         <xs:enumeration value='chat'/>
         <xs:enumeration value='dnd'/>
@@ -126,12 +137,19 @@
   <xs:element name='status'>
     <xs:complexType>
       <xs:simpleContent>
-        <xs:extension base='statusType'>
+        <xs:extension base='string1024'>
           <xs:attribute ref='xml:lang' use='optional'/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
+
+  <xs:simpleType name='string1024'>
+    <xs:restriction base='xs:string'>
+      <xs:minLength value='1'/>
+      <xs:maxLength value='1024'/>
+    </xs:restriction>
+  </xs:simpleType>
 
   <xs:element name='priority' type='xs:byte'/>
 
@@ -139,7 +157,9 @@
     <xs:complexType>
       <xs:sequence>
         <xs:any     namespace='##other'
-                    minOccurs='0'/>
+                    minOccurs='0'
+                    maxOccurs='1'
+                    processContents='lax'/>
         <xs:element ref='error'
                     minOccurs='0'/>
       </xs:sequence>
@@ -154,7 +174,7 @@
                     use='optional'/>
       <xs:attribute name='type' use='required'>
         <xs:simpleType>
-          <xs:restriction base='xs:NCName'>
+          <xs:restriction base='xs:NMTOKEN'>
             <xs:enumeration value='error'/>
             <xs:enumeration value='get'/>
             <xs:enumeration value='result'/>
@@ -168,15 +188,17 @@
 
   <xs:element name='error'>
     <xs:complexType>
-      <xs:sequence  xmlns:err='urn:ietf:params:xml:ns:xmpp-stanzas'>
-        <xs:group   ref='err:stanzaErrorGroup'/>
+      <xs:sequence xmlns:err='urn:ietf:params:xml:ns:xmpp-stanzas'>
+        <xs:group ref='err:stanzaErrorGroup'/>
         <xs:element ref='err:text'
                     minOccurs='0'/>
       </xs:sequence>
-      <xs:attribute name='code' type='xs:unsignedShort' use='optional'/>
+      <xs:attribute name='by' 
+                    type='xs:string' 
+                    use='optional'/>
       <xs:attribute name='type' use='required'>
         <xs:simpleType>
-          <xs:restriction base='xs:NCName'>
+          <xs:restriction base='xs:NMTOKEN'>
             <xs:enumeration value='auth'/>
             <xs:enumeration value='cancel'/>
             <xs:enumeration value='continue'/>
@@ -187,18 +209,5 @@
       </xs:attribute>
     </xs:complexType>
   </xs:element>
-
-  <xs:simpleType name='statusType'>
-    <xs:restriction base='xs:string'>
-      <xs:minLength value='1'/>
-      <xs:maxLength value='1024'/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name='nonEmptyString'>
-    <xs:restriction base='xs:string'>
-      <xs:minLength value='1'/>
-    </xs:restriction>
-  </xs:simpleType>
 
 </xs:schema>
