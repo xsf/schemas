@@ -124,7 +124,7 @@
                       use='optional'/>
         <xs:attribute name='previd' 
                       type='xs:string' 
-                      use='optional'/>
+                      use='required'/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
