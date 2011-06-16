@@ -9,7 +9,7 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      XEP-0060: http://www.xmpp.org/extensions/xep-0060.html
+      XEP-0060: http://xmpp.org/extensions/xep-0060.html
     </xs:documentation>
   </xs:annotation>
 
@@ -51,6 +51,7 @@
                 <xs:enumeration value='outcast'/>
                 <xs:enumeration value='owner'/>
                 <xs:enumeration value='publisher'/>
+                <xs:enumeration value='publish-only'/>
               </xs:restriction>
             </xs:simpleType>
           </xs:attribute>
@@ -79,11 +80,10 @@
 
   <xs:element name='delete'>
     <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base='empty'>
-          <xs:attribute name='node' type='xs:string' use='required'/>
-        </xs:extension>
-      </xs:simpleContent>
+      <xs:sequence>
+        <xs:element ref='redirect' minOccurs='0' maxOccurs='1'/>
+      </xs:sequence>
+      <xs:attribute name='node' type='xs:string' use='required'/>
     </xs:complexType>
   </xs:element>
 
@@ -92,6 +92,16 @@
       <xs:simpleContent>
         <xs:extension base='empty'>
           <xs:attribute name='node' type='xs:string' use='required'/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name='redirect'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='empty'>
+          <xs:attribute name='uri' type='xs:string' use='required'/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>

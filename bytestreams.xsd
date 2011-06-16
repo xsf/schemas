@@ -18,9 +18,9 @@
       <xs:choice>
         <xs:element ref='streamhost' minOccurs='0' maxOccurs='unbounded'/>
         <xs:element ref='streamhost-used' minOccurs='0'/>
-        <xs:element name='activate' type='empty' minOccurs='0'/>
+        <xs:element name='activate' type='xs:string' minOccurs='0'/>
       </xs:choice>
-      <xs:attribute name='sid' type='xs:string' use='optional'/>
+      <xs:attribute name='dstaddr' type='xs:string' use='optional'/>
       <xs:attribute name='mode' use='optional' default='tcp'>
         <xs:simpleType>
           <xs:restriction base='xs:NCName'>
@@ -29,6 +29,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
+      <xs:attribute name='sid' type='xs:string' use='required'/>
     </xs:complexType>
   </xs:element>
 
@@ -38,18 +39,7 @@
         <xs:extension base='empty'>
           <xs:attribute name='jid' type='xs:string' use='required'/>
           <xs:attribute name='host' type='xs:string' use='required'/>
-          <xs:attribute name='zeroconf' type='xs:string' use='optional'/>
-          <xs:attribute name='port' type='xs:string' use='optional'/>
-        </xs:extension>
-      </xs:simpleContent>
-    </xs:complexType>
-  </xs:element>
-
-  <xs:element name='udpsuccess'>
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base='empty'>
-          <xs:attribute name='dstaddr' type='xs:string' use='required'/>
+          <xs:attribute name='port' type='xs:string' use='optional' default='1080'/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
@@ -60,6 +50,16 @@
       <xs:simpleContent>
         <xs:extension base='empty'>
           <xs:attribute name='jid' type='xs:string' use='required'/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name='udpsuccess'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='empty'>
+          <xs:attribute name='dstaddr' type='xs:string' use='required'/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>

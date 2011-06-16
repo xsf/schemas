@@ -30,6 +30,7 @@
         </xs:sequence>
         <xs:choice minOccurs='0'>
           <xs:element ref='affiliations'/>
+          <xs:element ref='default'/>
           <xs:element ref='items'/>
           <xs:element ref='publish'/>
           <xs:element ref='retract'/>
@@ -61,6 +62,7 @@
                 <xs:enumeration value='outcast'/>
                 <xs:enumeration value='owner'/>
                 <xs:enumeration value='publisher'/>
+                <xs:enumeration value='publish-only'/>
               </xs:restriction>
             </xs:simpleType>
           </xs:attribute>
@@ -83,6 +85,26 @@
       <xs:simpleContent>
         <xs:extension base='empty'>
           <xs:attribute name='node' type='xs:string' use='optional'/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name='default'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='empty'>
+          <xs:attribute name='node' type='xs:string' use='optional'/>
+          <xs:attribute name='type'
+                        use='optional'
+                        default='leaf'>
+            <xs:simpleType>
+              <xs:restriction base='xs:NCName'>
+                <xs:enumeration value='collection'/>
+                <xs:enumeration value='leaf'/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>

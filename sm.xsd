@@ -2,8 +2,8 @@
 
 <xs:schema
     xmlns:xs='http://www.w3.org/2001/XMLSchema'
-    targetNamespace='urn:xmpp:sm:2'
-    xmlns='urn:xmpp:sm:2'
+    targetNamespace='urn:xmpp:sm:3'
+    xmlns='urn:xmpp:sm:3'
     elementFormDefault='qualified'>
 
   <xs:annotation>
@@ -39,9 +39,6 @@
                         type='xs:boolean'
                         use='optional'
                         default='false'/>
-          <xs:attribute name='stanzas' 
-                        type='xs:unsignedShort' 
-                        use='optional'/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
@@ -54,6 +51,9 @@
           <xs:attribute name='id' 
                         type='xs:string'
                         use='optional'/>
+          <xs:attribute name='location' 
+                        type='xs:string' 
+                        use='optional'/>
           <xs:attribute name='max' 
                         type='xs:positiveInteger' 
                         use='optional'/>
@@ -61,9 +61,6 @@
                         type='xs:boolean'
                         use='optional'
                         default='false'/>
-          <xs:attribute name='stanzas' 
-                        type='xs:unsignedShort' 
-                        use='optional'/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
@@ -101,18 +98,6 @@
         <xs:element name='optional' type='empty'/>
         <xs:element name='required' type='empty'/>
       </xs:choice>
-    </xs:complexType>
-  </xs:element>
-
-  <xs:element name='t'>
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base='empty'>
-          <xs:attribute name='stanzas' 
-                        type='xs:unsignedShort' 
-                        use='optional'/>
-        </xs:extension>
-      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
 

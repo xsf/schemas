@@ -11,7 +11,7 @@
       This namespace is used for error reporting only, as
       defined in XEP-0060:
 
-      http://www.xmpp.org/extensions/xep-0060.html
+      http://xmpp.org/extensions/xep-0060.html
     </xs:documentation>
   </xs:annotation>
 
@@ -24,6 +24,7 @@
   <xs:element name='item-forbidden' type='empty'/>
   <xs:element name='item-required' type='empty'/>
   <xs:element name='jid-required' type='empty'/>
+  <xs:element name='max-items-exceeded' type='empty'/>
   <xs:element name='max-nodes-exceeded' type='empty'/>
   <xs:element name='nodeid-required' type='empty'/>
   <xs:element name='not-in-roster-group' type='empty'/>
@@ -33,6 +34,7 @@
   <xs:element name='pending-subscription' type='empty'/>
   <xs:element name='presence-subscription-required' type='empty'/>
   <xs:element name='subid-required' type='empty'/>
+  <xs:element name='too-many-subscriptions' type='empty'/>
   <xs:element name='unsupported'>
     <xs:complexType>
       <xs:simpleContent>
@@ -51,7 +53,7 @@
                 <xs:enumeration value='config-node'/>
                 <xs:enumeration value='create-and-configure'/>
                 <xs:enumeration value='create-nodes'/>
-                <xs:enumeration value='delete-any'/>
+                <xs:enumeration value='delete-items'/>
                 <xs:enumeration value='delete-nodes'/>
                 <xs:enumeration value='filtered-notifications'/>
                 <xs:enumeration value='get-pending'/>
@@ -71,6 +73,7 @@
                 <xs:enumeration value='presence-subscribe'/>
                 <xs:enumeration value='publish'/>
                 <xs:enumeration value='publish-options'/>
+                <xs:enumeration value='publish-only-affiliation'/>
                 <xs:enumeration value='publisher-affiliation'/>
                 <xs:enumeration value='purge-nodes'/>
                 <xs:enumeration value='retract-items'/>

@@ -9,7 +9,7 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      XEP-0060: http://www.xmpp.org/extensions/xep-0060.html
+      XEP-0060: http://xmpp.org/extensions/xep-0060.html
     </xs:documentation>
   </xs:annotation>
 
@@ -19,7 +19,7 @@
 
   <xs:element name='event'>
     <xs:complexType>
-      <xs:choice minOccurs='0'>
+      <xs:choice>
         <xs:element ref='collection'/>
         <xs:element ref='configuration'/>
         <xs:element ref='delete'/>
@@ -32,10 +32,31 @@
 
   <xs:element name='collection'>
     <xs:complexType>
-      <xs:sequence minOccurs='1'>
-        <xs:element ref='node'/>
-      </xs:sequence>
+      <xs:choice>
+        <xs:element ref='associate'/>
+        <xs:element ref='disassociate'/>
+      </xs:choice>
       <xs:attribute name='node' type='xs:string' use='optional'/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name='associate'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='empty'>
+          <xs:attribute name='node' type='xs:string' use='required'/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name='disassociate'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='empty'>
+          <xs:attribute name='node' type='xs:string' use='required'/>
+        </xs:extension>
+      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
 
@@ -50,11 +71,10 @@
 
   <xs:element name='delete'>
     <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base='empty'>
-          <xs:attribute name='node' type='xs:string' use='required'/>
-        </xs:extension>
-      </xs:simpleContent>
+      <xs:sequence>
+        <xs:element ref='redirect' minOccurs='0' maxOccurs='1'/>
+      </xs:sequence>
+      <xs:attribute name='node' type='xs:string' use='required'/>
     </xs:complexType>
   </xs:element>
 
@@ -75,6 +95,7 @@
       </xs:choice>
       <xs:attribute name='id' type='xs:string' use='optional'/>
       <xs:attribute name='node' type='xs:string' use='optional'/>
+      <xs:attribute name='publisher' type='xs:string' use='optional'/>
     </xs:complexType>
   </xs:element>
 
@@ -83,6 +104,16 @@
       <xs:simpleContent>
         <xs:extension base='empty'>
           <xs:attribute name='node' type='xs:string' use='required'/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name='redirect'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='empty'>
+          <xs:attribute name='uri' type='xs:string' use='required'/>
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>
@@ -102,6 +133,7 @@
     <xs:complexType>
       <xs:simpleContent>
         <xs:extension base='empty'>
+          <xs:attribute name='expiry' type='xs:dateTime' use='optional'/>
           <xs:attribute name='jid' type='xs:string' use='required'/>
           <xs:attribute name='node' type='xs:string' use='optional'/>
           <xs:attribute name='subid' type='xs:string' use='optional'/>
