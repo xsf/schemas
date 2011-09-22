@@ -18,6 +18,10 @@
       <xs:simpleContent>
         <xs:extension base='empty'>
           <xs:attribute
+              name='continue'
+              type='xs:boolean'
+              use='optional'/>
+          <xs:attribute
               name='jid'
               type='xs:string'
               use='required'/>
@@ -27,6 +31,10 @@
               use='optional'/>
           <xs:attribute
               name='reason'
+              type='xs:string'
+              use='optional'/>
+          <xs:attribute
+              name='thread'
               type='xs:string'
               use='optional'/>
         </xs:extension>
