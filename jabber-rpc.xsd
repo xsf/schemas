@@ -102,7 +102,7 @@
       <xs:element name="int"           type="xs:int"/>
       <xs:element name="string"        type="ASCIIString"/>
       <xs:element name="double"        type="xs:decimal"/>
-      <xs:element name="Base64"        type="xs:base64Binary"/>
+      <xs:element name="base64"        type="xs:base64Binary"/>
       <xs:element name="boolean"       type="NumericBoolean"/>
       <xs:element name="dateTime.iso8601" type="xs:dateTime"/>
       <xs:element name="array"         type="ArrayType"/>
