@@ -33,7 +33,7 @@
                     use='optional'>
         <xs:simpleType>
           <xs:restriction base='xs:NMTOKEN'>
-            <xs:enumeration value='subscribed'/>
+            <xs:enumeration value='subscribe'/>
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
