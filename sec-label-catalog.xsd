@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sl="urn:xmpp:sec-label:0"
-    xmlns="urn:xmpp:sec-label:catalog:2" targetNamespace="urn:xmpp:sec-label:catalog:1"
+    xmlns="urn:xmpp:sec-label:catalog:2" targetNamespace="urn:xmpp:sec-label:catalog:2"
     elementFormDefault="qualified">
 
     <xs:annotation>
