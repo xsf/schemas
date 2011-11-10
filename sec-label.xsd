@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:xmpp:sec-label:0"
+    xmlns="urn:xmpp:sec-label:0" elementFormDefault="qualified">
+
+    <xs:annotation>
+      <xs:documentation>
+        The protocol documented by this schema is defined in
+        XEP-0258: http://xmpp.org/extensions/xep-0258.html
+      </xs:documentation>
+    </xs:annotation>
+
+    <xs:simpleType name="colorCSS">
+        <xs:annotation>
+            <xs:documentation>CSS colors (W3C colors + "orange")</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="aqua"/>
+            <xs:enumeration value="black"/>
+            <xs:enumeration value="blue"/>
+            <xs:enumeration value="fuschia"/>
+            <xs:enumeration value="gray"/>
+            <xs:enumeration value="green"/>
+            <xs:enumeration value="lime"/>
+            <xs:enumeration value="maroon"/>
+            <xs:enumeration value="navy"/>
+            <xs:enumeration value="olive"/>
+            <xs:enumeration value="purple"/>
+            <xs:enumeration value="red"/>
+            <xs:enumeration value="silver"/>
+            <xs:enumeration value="teal"/>
+            <xs:enumeration value="white"/>
+            <xs:enumeration value="yellow"/>
+            <xs:enumeration value="orange"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="colorRGB">
+        <xs:annotation>
+            <xs:documentation>Hex encoded RGB</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="#[0-9A-Fa-f]{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="color">
+        <xs:annotation>
+            <xs:documentation>Color</xs:documentation>
+        </xs:annotation>
+        <xs:union memberTypes="colorCSS colorRGB"/>
+    </xs:simpleType>
+
+    <xs:complexType name="displaymarking">
+        <xs:annotation>
+            <xs:documentation>Display Marking</xs:documentation>
+            <xs:documentation>String to be prominently displayed along with labeled
+                object.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="bgcolor" type="color" use="optional" default="white"/>
+                <xs:attribute name="fgcolor" type="color" use="optional" default="black"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="label">
+        <xs:choice minOccurs="0">
+            <xs:any namespace="##other" processContents="lax"/>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:element name="securitylabel">
+        <xs:annotation>
+            <xs:documentation>A Security Label</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="displaymarking" type="displaymarking">
+                    <xs:annotation>
+                        <xs:documentation>A Display Marking</xs:documentation>
+                        <xs:documentation>To be prominently displayed</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="label" type="label">
+                    <xs:annotation>
+                        <xs:documentation>The Primary Label</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="equivalentlabel" type="label" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>An Equivalent Label</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:xmpp:sec-label:ess:0"
+    xmlns="urn:xmpp:sec-label:ess:0" elementFormDefault="qualified">
+
+    <xs:annotation>
+      <xs:documentation>
+        The protocol documented by this schema is defined in
+        XEP-0258: http://xmpp.org/extensions/xep-0258.html
+      </xs:documentation>
+    </xs:annotation>
+
+  <xs:element name="esssecuritylabel" type="xs:base64Binary">
+    <xs:annotation>
+      <xs:documentation>An S/MIME ESS SecurityLabel [RFC2634]</xs:documentation>
+      <xs:documentation>The value is the base64 encoding of the BER/DER encoding of 
+          an ASN.1 ESSSecurityLabel type as defined in RFC 2634. </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+</xs:schema>

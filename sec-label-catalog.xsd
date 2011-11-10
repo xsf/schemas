@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sl="urn:xmpp:sec-label:0"
+    xmlns="urn:xmpp:sec-label:catalog:2" targetNamespace="urn:xmpp:sec-label:catalog:1"
+    elementFormDefault="qualified">
+
+    <xs:annotation>
+      <xs:documentation>
+        The protocol documented by this schema is defined in
+        XEP-0258: http://xmpp.org/extensions/xep-0258.html
+      </xs:documentation>
+    </xs:annotation>
+
+    <xs:import schemaLocation="xep258.xsd" namespace="urn:xmpp:sec-label:0"/>
+
+    <xs:attribute name="to" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Target JabberId</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:attribute name="from" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Target JabberId</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:attribute name="name" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Name</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:attribute name="desc" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Description</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:attribute name="id" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Identifer for current revision, commonly a hash</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:attribute name="size" type="xs:integer">
+        <xs:annotation>
+            <xs:documentation>Number of items</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:attribute name="restrict" type="xs:boolean">
+        <xs:annotation>
+            <xs:documentation>Restrictive</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:attribute name="selector" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>User input selector</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:attribute name="default" type="xs:boolean">
+        <xs:annotation>
+            <xs:documentation>default selection</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+
+    <xs:element name="catalog">
+        <xs:annotation>
+            <xs:documentation>A Catalog of Labels</xs:documentation>
+        </xs:annotation>
+
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="item" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                            <xs:element ref="sl:securitylabel"/>
+                        </xs:sequence>
+                        <xs:attribute ref="selector" use="optional"/>
+                        <xs:attribute ref="default" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute ref="to" use="optional"/>
+            <xs:attribute ref="from" use="optional"/>
+            <xs:attribute ref="name" use="optional"/>
+            <xs:attribute ref="desc" use="optional"/>
+            <xs:attribute ref="id" use="optional"/>
+            <xs:attribute ref="size" use="optional"/>
+            <xs:attribute ref="restrict" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
