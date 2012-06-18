@@ -84,18 +84,6 @@
     </xs:complexType>
   </xs:element>
 
-  <xs:element name='subject'>
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base='xs:NMTOKEN'>
-          <xs:attribute name='parent' 
-                        type='xs:NMTOKEN'
-                        use='optional'/>
-        </xs:extension>
-      </xs:simpleContent>
-    </xs:complexType>
-  </xs:element>
-
   <xs:element name='presence'>
     <xs:complexType>
       <xs:sequence>
