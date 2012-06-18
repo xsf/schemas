@@ -6,11 +6,18 @@
     xmlns='http://etherx.jabber.org/streams'
     elementFormDefault='unqualified'>
 
-  <xs:import namespace='jabber:client'/>
-  <xs:import namespace='jabber:server'/>
-  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-sasl'/>
-  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-streams'/>
-  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-tls'/>
+  <xs:import namespace='jabber:client'
+             schemaLocation='http://xmpp.org/schemas/jabber-client.xsd'/>
+  <xs:import namespace='jabber:server'
+             schemaLocation='http://xmpp.org/schemas/jabber-server.xsd'/>
+  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-sasl'
+             schemaLocation='http://xmpp.org/schemas/sasl.xsd'/>
+  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-streams
+             schemaLocation='http://xmpp.org/schemas/streamerror.xsd'/>
+  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-tls'
+             schemaLocation='http://xmpp.org/schemas/tls.xsd'/>
+  <xs:import namespace='http://www.w3.org/XML/1998/namespace'
+             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
 
   <xs:element name='stream'>
     <xs:complexType>

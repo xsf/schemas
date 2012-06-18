@@ -6,8 +6,10 @@
     xmlns='jabber:server'
     elementFormDefault='qualified'>
 
-  <xs:import 
-      namespace='urn:ietf:params:xml:ns:xmpp-stanzas'/>
+  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-stanzas'
+             schemaLocation='http://xmpp.org/schemas/stanzaerror.xsd'/>
+  <xs:import namespace='http://www.w3.org/XML/1998/namespace'
+             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
 
   <xs:element name='message'>
      <xs:complexType>
