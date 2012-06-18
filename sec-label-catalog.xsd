@@ -10,7 +10,8 @@
       </xs:documentation>
     </xs:annotation>
 
-    <xs:import schemaLocation="xep258.xsd" namespace="urn:xmpp:sec-label:0"/>
+    <xs:import namespace="urn:xmpp:sec-label:0"
+               schemaLocation="sec-label.xsd"/>
 
     <xs:attribute name="to" type="xs:string">
         <xs:annotation>
