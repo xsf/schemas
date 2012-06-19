@@ -12,7 +12,7 @@
              schemaLocation='http://xmpp.org/schemas/jabber-server.xsd'/>
   <xs:import namespace='urn:ietf:params:xml:ns:xmpp-sasl'
              schemaLocation='http://xmpp.org/schemas/sasl.xsd'/>
-  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-streams
+  <xs:import namespace='urn:ietf:params:xml:ns:xmpp-streams'
              schemaLocation='http://xmpp.org/schemas/streamerror.xsd'/>
   <xs:import namespace='urn:ietf:params:xml:ns:xmpp-tls'
              schemaLocation='http://xmpp.org/schemas/tls.xsd'/>
