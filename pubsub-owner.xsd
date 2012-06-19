@@ -135,4 +135,10 @@
     </xs:complexType>
   </xs:element>
 
+  <xs:simpleType name='empty'>
+    <xs:restriction base='xs:string'>
+      <xs:enumeration value=''/>
+    </xs:restriction>
+  </xs:simpleType>
+
 </xs:schema>
