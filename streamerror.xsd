@@ -19,10 +19,10 @@
   <xs:element name='improper-addressing' type='empty'/>
   <xs:element name='internal-server-error' type='empty'/>
   <xs:element name='invalid-from' type='empty'/>
-  <xs:element name='invalid-id' type='empty'/>
   <xs:element name='invalid-namespace' type='empty'/>
   <xs:element name='invalid-xml' type='empty'/>
   <xs:element name='not-authorized' type='empty'/>
+  <xs:element name='not-well-formed' type='empty'/>
   <xs:element name='policy-violation' type='empty'/>
   <xs:element name='remote-connection-failed' type='empty'/>
   <xs:element name='reset' type='empty'/>
@@ -32,9 +32,9 @@
   <xs:element name='system-shutdown' type='empty'/>
   <xs:element name='undefined-condition' type='empty'/>
   <xs:element name='unsupported-encoding' type='empty'/>
+  <xs:element name='unsupported-feature' type='empty'/>
   <xs:element name='unsupported-stanza-type' type='empty'/>
   <xs:element name='unsupported-version' type='empty'/>
-  <xs:element name='xml-not-well-formed' type='empty'/>
 
   <xs:group name='streamErrorGroup'>
     <xs:choice>
