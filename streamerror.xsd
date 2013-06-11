@@ -51,6 +51,7 @@
       <xs:element ref='invalid-namespace'/>
       <xs:element ref='invalid-xml'/>
       <xs:element ref='not-authorized'/>
+      <xs:element ref='not-well-formed'/>
       <xs:element ref='policy-violation'/>
       <xs:element ref='remote-connection-failed'/>
       <xs:element ref='reset'/>
@@ -60,9 +61,9 @@
       <xs:element ref='system-shutdown'/>
       <xs:element ref='undefined-condition'/>
       <xs:element ref='unsupported-encoding'/>
+      <xs:element ref='unsupported-feature'/>
       <xs:element ref='unsupported-stanza-type'/>
       <xs:element ref='unsupported-version'/>
-      <xs:element ref='xml-not-well-formed'/>
     </xs:choice>
   </xs:group>
 
