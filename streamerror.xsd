@@ -47,7 +47,6 @@
       <xs:element ref='improper-addressing'/>
       <xs:element ref='internal-server-error'/>
       <xs:element ref='invalid-from'/>
-      <xs:element ref='invalid-id'/>
       <xs:element ref='invalid-namespace'/>
       <xs:element ref='invalid-xml'/>
       <xs:element ref='not-authorized'/>
