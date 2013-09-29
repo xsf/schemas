@@ -4,7 +4,7 @@
 <title>XMPP Schemas</title>
 <!--#include virtual="/includes/head.txt" -->
 <h2>XMPP Schemas</h2>
-<p style='font-style: italic'>Last Updated: 2011-06-15</p>
+<p style='font-style: italic'>Last Updated: 2013-09-28</p>
 <p>The <a href='/protocols/'>XMPP protocols</a> defined in the <a href='/rfcs/'>XMPP RFCs</a> and various <a href='/extensions/'>XMPP extensions</a> are defined formally in terms of <a href='http://www.w3.org/TR/xmlschema-1/'>W3C XML Schema</a>. This page provides links to online versions of the relevant schemas.</p>
 <p style='font-style: italic'>Note: The following table is sortable, just click on the headers (click twice to reverse the sort order).</p>
 <table border='1' cellpadding='3' cellspacing='0' class='sortable' id='xeplist'>
@@ -16,7 +16,7 @@
 <tr class='tablebody'>
   <td>http://etherx.jabber.org/streams</td>
   <td><a href='streams.xsd'>streams.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/rfcs/rfc6120.html'>RFC 6120</a></td>
 </tr>
 <tr class='tablebody'>
   <td>http://jabber.org/protocol/activity</td>
@@ -227,7 +227,7 @@
 <tr class='tablebody'>
   <td>jabber:client</td>
   <td><a href='jabber-client.xsd'>jabber-client.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/rfcs/rfc6120.html'>RFC 6120</a></td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:component:accept</td>
@@ -282,7 +282,7 @@
 <tr class='tablebody'>
   <td>jabber:iq:roster</td>
   <td><a href='roster.xsd'>roster.xsd</a></td>
-  <td><a href='/rfcs/rfc3921.html'>RFC 3921</a> *</td>
+  <td><a href='/rfcs/rfc6121.html'>RFC 6121</a></td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:iq:rpc</td>
@@ -307,12 +307,12 @@
 <tr class='tablebody'>
   <td>jabber:server</td>
   <td><a href='jabber-server.xsd'>jabber-server.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/rfcs/rfc6120.html'>RFC 6120</a></td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:server:dialback</td>
   <td><a href='dialback.xsd'>dialback.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/extensions/xep-0220.html'>XEP-0220</a></td>
 </tr>
 <tr class='tablebody'>
   <td>jabber:x:conference</td>
@@ -377,7 +377,7 @@
 <tr class='tablebody'>
   <td>urn:ietf:params:xml:ns:xmpp-bind</td>
   <td><a href='bind.xsd'>bind.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/rfcs/rfc6120.html'>RFC 6120</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:ietf:params:xml:ns:xmpp-e2e</td>
@@ -387,27 +387,27 @@
 <tr class='tablebody'>
   <td>urn:ietf:params:xml:ns:xmpp-sasl</td>
   <td><a href='sasl.xsd'>sasl.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/rfcs/rfc6120.html'>RFC 6120</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:ietf:params:xml:ns:xmpp-session</td>
   <td><a href='session.xsd'>session.xsd</a></td>
-  <td><a href='/rfcs/rfc3921.html'>RFC 3921</a> *</td>
+  <td><a href='/rfcs/rfc3921.html'>RFC 3921</a> (obsolete)</td>
 </tr>
 <tr class='tablebody'>
   <td>urn:ietf:params:xml:ns:xmpp-stanzas</td>
   <td><a href='stanzaerror.xsd'>stanzaerror.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/rfcs/rfc6120.html'>RFC 6120</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:ietf:params:xml:ns:xmpp-streams</td>
   <td><a href='streamerror.xsd'>streamerror.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/rfcs/rfc6120.html'>RFC 6120</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:ietf:params:xml:ns:xmpp-tls</td>
   <td><a href='tls.xsd'>tls.xsd</a></td>
-  <td><a href='/rfcs/rfc3920.html'>RFC 3920</a> *</td>
+  <td><a href='/rfcs/rfc6120.html'>RFC 6120</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:xmpp:archive</td>
@@ -428,6 +428,11 @@
   <td>urn:xmpp:avatar:metadata</td>
   <td><a href='avatar-metadata.xsd'>avatar-metadata.xsd</a></td>
   <td><a href='/extensions/xep-0084.html'>XEP-0084</a></td>
+</tr>
+<tr class='tablebody'>
+  <td>urn:xmpp:bidi</td>
+  <td><a href='bidi.xsd'>bidi.xsd</a></td>
+  <td><a href='/extensions/xep-0288.html'>XEP-0288</a></td>
 </tr>
 <tr class='tablebody'>
   <td>urn:xmpp:blocking</td>
@@ -545,5 +550,4 @@
   <td><a href='/extensions/xep-0153.html'>XEP-0153</a></td>
 </tr>
 </table>
-<p>* Note: The core XMPP schemas provided here are the latest versions from the <a href='/xsf/sourcecontrol.shtml'>source control repository</a>, incorporating errata and community consensus regarding potential modifications as reflected in rfc3920bis and rfc3921bis located at &lt;<a href='/internet-drafts/'>http://www.xmpp.org/internet-drafts/</a>&gt;.</p>
 <!--#include virtual="/includes/foot.txt" -->
