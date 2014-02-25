@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xs:schema
+    xmlns:xs='http://www.w3.org/2001/XMLSchema'
+    targetNamespace='urn:xmpp:reach:0'
+    xmlns='urn:xmpp:reach:0'
+    elementFormDefault='qualified'>
+
+  <xs:annotation>
+    <xs:documentation>
+      The protocol documented by this schema is defined in
+      XEP-0152: http://www.xmpp.org/extensions/xep-0152.html
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:element name='reach'>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name='addr' 
+                    minOccurs='0'
+                    maxOccurs='unbounded'
+                    type='addrElementType'/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name='addrElementType'>
+    <xs:sequence>
+      <xs:element name='desc' 
+                  minOccurs='0'
+                  maxOccurs='unbounded'
+                  type='xs:string'/>
+    </xs:sequence>
+    <xs:attribute name='uri' use='required' type='xs:anyURI'/>
+  </xs:complexType>
+
+</xs:schema>
