@@ -1,0 +1,46 @@
+<xs:schema
+    xmlns:xs='http://www.w3.org/2001/XMLSchema'
+    targetNamespace='urn:xmpp:jingle:apps:rtp:rtcp-fb:0'
+    xmlns='urn:xmpp:jingle:apps:rtp:rtcp-fb:0'
+    elementFormDefault='qualified'>
+
+  <xs:annotation>
+    <xs:documentation>
+      The protocol documented by this schema is defined in
+      XEP-0293: http://www.xmpp.org/extensions/xep-0293.html
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:element name='rtcp-fb'>
+    <xs:complexType>
+      <xs:sequence>  
+        <xs:element name='parameter'
+            type='parameterElementType'
+            minOccurs='0' 
+            maxOccurs='unbounded'/>
+      </xs:sequence>
+      <xs:attribute name='type' type='xs:string' use='required'/>
+      <xs:attribute name='subtype' type='xs:string' use='optional'/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name='rtcp-fb-trr-int'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='empty'>
+          <xs:attribute name='value' type='xs:positiveInteger' use='required'/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name='parameterElementType'>
+    <xs:simpleContent>
+      <xs:extension base='empty'>
+        <xs:attribute name='name' type='xs:string' use='required'/>
+        <xs:attribute name='value' type='xs:string' use='optional'/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+</xs:schema>
