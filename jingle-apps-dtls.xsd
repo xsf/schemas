@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xs:schema
+    xmlns:xs='http://www.w3.org/2001/XMLSchema'
+    targetNamespace='urn:xmpp:jingle:apps:dtls:0'
+    xmlns='urn:xmpp:jingle:apps:dtls:0'
+    elementFormDefault='qualified'>
+
+  <xs:annotation>
+    <xs:documentation>
+      The protocol documented by this schema is defined in
+      XEP-0320: http://www.xmpp.org/extensions/xep-0320.html
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:element name='fingerprint'>
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base='xs:string'>
+          <xs:attribute name='hash' type='xs:string' use='required'/>
+          <xs:attribute name='setup' use='required'/>
+            <xs:simpleType>
+              <xs:restriction base='xs:NCName'>
+                <xs:enumeration value='active'/>
+                <xs:enumeration value='passive'/>
+                <xs:enumeration value='actpass'/>
+                <xs:enumeration value='holdconn'/>
+                <xs:annotation>
+                  <xs:documentation>
+                    the 'holdconn' value is not used and included only for completeness.
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
