@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<xs:schema
+    xmlns:xs='http://www.w3.org/2001/XMLSchema'
+    targetNamespace='urn:xmpp:domain-based-name:1'
+    xmlns='urn:xmpp:domain-based-name:1'
+    elementFormDefault='qualified'>
+
+  <xs:annotation>
+    <xs:documentation>
+      The protocol documented by this schema is defined in
+      XEP-0233: http://www.xmpp.org/extensions/xep-0233.html
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:element name='hostname' type='xs:string'/>
+
+</xs:schema>
