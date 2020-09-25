@@ -11,7 +11,7 @@
       This namespace is used for error reporting only, as
       defined in XEP-0060:
 
-      http://xmpp.org/extensions/xep-0060.html
+      https://xmpp.org/extensions/xep-0060.html
     </xs:documentation>
   </xs:annotation>
 

@@ -9,10 +9,10 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      XEP-0093: http://www.xmpp.org/extensions/xep-0093.html
+      XEP-0093: https://xmpp.org/extensions/xep-0093.html
 
       NOTE WELL: This protocol has been superseded by XEP-0144:
-      http://www.xmpp.org/extensions/xep-0144.html
+      https://xmpp.org/extensions/xep-0144.html
     </xs:documentation>
   </xs:annotation>
 
