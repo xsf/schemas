@@ -15,7 +15,7 @@
 
   <xs:import 
       namespace='http://jabber.org/protocol/feature-neg'
-      schemaLocation='http://xmpp.org/schemas/feature-neg.xsd'/>
+      schemaLocation='https://xmpp.org/schemas/feature-neg.xsd'/>
 
   <xs:element name='si'>
     <xs:annotation>

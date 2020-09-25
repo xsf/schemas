@@ -14,7 +14,7 @@
   </xs:annotation>
 
   <xs:import namespace='jabber:client'
-             schemaLocation='http://xmpp.org/schemas/jabber-client.xsd'/>
+             schemaLocation='https://xmpp.org/schemas/jabber-client.xsd'/>
 
   <xs:element name='waitlist'>
     <xs:complexType>
