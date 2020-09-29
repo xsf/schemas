@@ -41,10 +41,10 @@
       "XEP-0071: XHTML-IM", a specification published by the
       XMPP Standards Foundation.
 
-         http://www.xmpp.org/extensions/xep-0071.html
+         https://xmpp.org/extensions/xep-0071.html
 
     </xs:documentation>
-    <xs:documentation source="http://www.xmpp.org/extensions/xep-0071.html"/>
+    <xs:documentation source="https://xmpp.org/extensions/xep-0071.html"/>
   </xs:annotation>
 
   <!-- BEGIN ATTRIBUTE GROUPS -->

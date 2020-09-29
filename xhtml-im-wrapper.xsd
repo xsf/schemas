@@ -8,7 +8,7 @@
     elementFormDefault='qualified'>
 
   <xs:import namespace='http://www.w3.org/1999/xhtml'
-             schemaLocation='http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd'/>
+             schemaLocation='https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd'/>
 
   <xs:annotation>
     <xs:documentation>
@@ -24,10 +24,10 @@
       "XEP-0071: XHTML-IM", a specification published by the
       XMPP Standards Foundation.
 
-         http://www.xmpp.org/extensions/xep-0071.html
+         https://xmpp.org/extensions/xep-0071.html
 
     </xs:documentation>
-    <xs:documentation source="http://www.xmpp.org/extensions/xep-0071.html"/>
+    <xs:documentation source="https://xmpp.org/extensions/xep-0071.html"/>
   </xs:annotation>
 
   <xs:element name='html'>

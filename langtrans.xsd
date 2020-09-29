@@ -9,12 +9,12 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      XEP-0171: http://www.xmpp.org/extensions/xep-0171.html
+      XEP-0171: https://xmpp.org/extensions/xep-0171.html
     </xs:documentation>
   </xs:annotation>
 
   <xs:import namespace='http://www.w3.org/XML/1998/namespace'
-             schemaLocation='http://www.w3.org/2001/03/xml.xsd'/>
+             schemaLocation='https://www.w3.org/2001/03/xml.xsd'/>
 
   <xs:element name='x'>
     <xs:complexType>

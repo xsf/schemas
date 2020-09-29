@@ -9,7 +9,7 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      XEP-0141: http://www.xmpp.org/extensions/xep-0141.html
+      XEP-0141: https://xmpp.org/extensions/xep-0141.html
     </xs:documentation>
   </xs:annotation>
 

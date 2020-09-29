@@ -9,12 +9,12 @@
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      XEP-0130: http://www.xmpp.org/extensions/xep-0130.html
+      XEP-0130: https://xmpp.org/extensions/xep-0130.html
     </xs:documentation>
   </xs:annotation>
 
   <xs:import namespace='jabber:client'
-             schemaLocation='http://xmpp.org/schemas/jabber-client.xsd'/>
+             schemaLocation='https://xmpp.org/schemas/jabber-client.xsd'/>
 
   <xs:element name='waitlist'>
     <xs:complexType>

@@ -7,14 +7,14 @@
     elementFormDefault='qualified'>
 
   <xs:import namespace='jabber:x:data'
-             schemaLocation='http://xmpp.org/schemas/x-data.xsd'/>
+             schemaLocation='https://xmpp.org/schemas/x-data.xsd'/>
   <xs:import namespace='jabber:x:oob'
-             schemaLocation='http://xmpp.org/schemas/x-oob.xsd'/>
+             schemaLocation='https://xmpp.org/schemas/x-oob.xsd'/>
 
   <xs:annotation>
     <xs:documentation>
       The protocol documented by this schema is defined in
-      XEP-0077: http://www.xmpp.org/extensions/xep-0077.html
+      XEP-0077: https://xmpp.org/extensions/xep-0077.html
     </xs:documentation>
   </xs:annotation>
 

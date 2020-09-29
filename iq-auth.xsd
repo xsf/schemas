@@ -15,7 +15,7 @@
       For historical purposes, the protocol documented by this 
       schema is defined in XEP-0078: 
 
-      http://www.xmpp.org/extensions/xep-0078.html
+      https://xmpp.org/extensions/xep-0078.html
     </xs:documentation>
   </xs:annotation>
 
